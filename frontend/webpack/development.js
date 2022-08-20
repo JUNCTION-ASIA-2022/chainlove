@@ -2,7 +2,7 @@ const path = require('path');
 
 const webpack = require('webpack');
 
-const PORT = 9000;
+const PORT = 8080;
 
 module.exports = {
   mode: 'development',
