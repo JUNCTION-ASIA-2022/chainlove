@@ -1,10 +1,10 @@
 import * as S from './style';
 
-const Description = () => {
+const Description = ({ mainTitle, subTitle }) => {
   return (
     <S.DescriptionWrapper>
-      <S.MainTitle>Create Simple Address as Phone Number</S.MainTitle>
-      <S.SubTitle>We will transfer account address as ease</S.SubTitle>
+      <S.MainTitle>{mainTitle}</S.MainTitle>
+      <S.SubTitle>{subTitle}</S.SubTitle>
     </S.DescriptionWrapper>
   );
 };

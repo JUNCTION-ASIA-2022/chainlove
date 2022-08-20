@@ -4,7 +4,10 @@ import Form from '@/components/Form';
 const Home = () => {
   return (
     <div>
-      <Description />
+      <Description
+        mainTitle="Create Simple Address as Phone Number"
+        subTitle="We will transfer account address as ease"
+      />
       <Form />
     </div>
   );
