@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-import { FlexColumn } from '@/styles/common';
+import { FlexColumn, Flex } from '@/styles/common';
 
 const ResultWrapper = styled(FlexColumn)``;
+
+const ResultNumberWrapper = styled(Flex)``;
 
 const ResultMessage = styled.p`
   font-size: ${({ theme: { font } }) => font.size.xSmall};
@@ -12,11 +14,11 @@ const ResultMessage = styled.p`
 `;
 
 const ResultNumber = styled.p`
-  font-size: ${({ theme: { font } }) => font.size.xSmall};
+  font-size: ${({ theme: { font } }) => font.size.large};
   font-weight: ${({ theme: { font } }) => font.weight.regular};
-  color: ${({ theme: { color } }) => color.gray3};
-  padding: 5px 90px;
+  color: ${({ theme: { color } }) => color.black};
+  padding: 5px 10px;
   text-align: center;
 `;
 
-export { ResultWrapper, ResultMessage, ResultNumber };
+export { ResultWrapper, ResultNumberWrapper, ResultMessage, ResultNumber };
