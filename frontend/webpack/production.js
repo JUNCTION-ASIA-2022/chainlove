@@ -19,4 +19,10 @@ module.exports = {
       filename: 'css/[name].[chunkhash].css',
     }),
   ],
+
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
 };

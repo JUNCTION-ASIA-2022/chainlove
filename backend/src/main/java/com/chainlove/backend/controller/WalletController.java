@@ -14,6 +14,7 @@ public class WalletController {
 
 	private final WalletService walletService;
 
+	@CrossOrigin(origins = "http://localhost:8000")
 	@GetMapping("/wallets/{userId}")
 	public ResponseEntity<WalletDetailResponse> retrieveDetail(@PathVariable Long userId) {
 		WalletDetailResponse response = walletService.retrieveDetail(userId);
@@ -21,6 +22,7 @@ public class WalletController {
 		return ResponseEntity.ok().body(response);
 	}
 
+	@CrossOrigin(origins = "http://localhost:8000")
 	@PostMapping("/wallets")
 	public ResponseEntity<AccountCreateResponse> createAccount(
 			@RequestBody AccountCreateRequest accountCreateRequest) {
