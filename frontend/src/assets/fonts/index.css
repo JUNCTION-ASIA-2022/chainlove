@@ -18,3 +18,5 @@
   font-weight: 400;
   src: local('NotoSans-Bold'), url('./NotoSans-Regular.woff') format('woff');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');

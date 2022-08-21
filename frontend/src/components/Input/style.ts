@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Flex } from '@/styles/common';
+import { Flex, FlexColumn } from '@/styles/common';
 
 const Input = styled.input`
   border: 1px solid ${({ theme: { color } }) => color.gray3};
@@ -30,9 +30,20 @@ const Button = styled.button`
   padding: 10px 20px;
 `;
 
-const InputWrapper = styled(Flex)`
+const InputWrapper = styled(FlexColumn)`
   width: 90%;
+`;
+
+const InputLabelWrapper = styled(Flex)`
+  width: 100%;
   align-items: flex-end;
 `;
 
-export { Input, Label, Button, InputWrapper };
+const Warning = styled.p`
+  color: red;
+  width: 100%;
+  margin-top: 5px;
+  font-size: ${({ theme: { font } }) => font.size.xSmall};
+`;
+
+export { Input, Label, Button, InputWrapper, InputLabelWrapper, Warning };

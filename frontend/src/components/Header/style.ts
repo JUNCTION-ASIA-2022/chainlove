@@ -6,6 +6,7 @@ const HeaderWrapper = styled.div`
   text-align: center;
   border-bottom: 1px solid ${({ theme: { color } }) => color.gray4};
   font-size: ${({ theme: { font } }) => font.size.large};
+  font-family: 'Poppins';
 `;
 
 export { HeaderWrapper };
