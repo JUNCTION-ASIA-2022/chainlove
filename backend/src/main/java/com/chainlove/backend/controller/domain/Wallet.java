@@ -17,10 +17,8 @@ public class Wallet {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(unique = true)
 	private String phoneNumber;
 
-	@Column(unique = true)
 	private String walletAddress;
 
 	public static Wallet from(AccountCreateRequest accountCreateRequest) {
